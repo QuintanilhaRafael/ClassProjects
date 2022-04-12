@@ -16,29 +16,29 @@
 
 /////////////////
 
-//let nome = prompt("Qual seu nome ?")
-//let idade = prompt("Qual sua idade ?")
-//console.log("Olá", nome, ", você tem", idade, "anos")
+let nome = prompt("Qual seu nome ?")
+let idade = prompt("Qual sua idade ?")
+console.log("Olá", nome, ", você tem", idade, "anos")
 
 // (Questão 2)
 
-//let primeiraPergunta = prompt("Você gosta de esportes ?")
-//let segundaPergunta = prompt("Você gosta de jogar no computador ?")
-//let terceiraPergunta = prompt("Você ama TI ?")
-//console.log("Você gosta de esportes ? - ", primeiraPergunta)
-//console.log("Você gosta de jogar no computador ? - ", segundaPergunta)
-//console.log("Você ama TI ? - ", terceiraPergunta)
+let primeiraPergunta = prompt("Você gosta de esportes ?")
+let segundaPergunta = prompt("Você gosta de jogar no computador ?")
+let terceiraPergunta = prompt("Você ama TI ?")
+console.log("Você gosta de esportes ? - ", primeiraPergunta)
+console.log("Você gosta de jogar no computador ? - ", segundaPergunta)
+console.log("Você ama TI ? - ", terceiraPergunta)
 
 // (Questão 3)
 
-//let a = 10
-//let b = 25
-//let c
-//c = a
-//a = b
-//b = c
-//console.log("O novo valor de a é:", a) 
-//console.log("O novo valor de b é:", b) 
+let a = 10
+let b = 25
+let c
+c = a
+a = b
+b = c
+console.log("O novo valor de a é:", a) 
+console.log("O novo valor de b é:", b) 
 
 // Desafio
 
