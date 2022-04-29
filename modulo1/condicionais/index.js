@@ -158,11 +158,3 @@ calculaPreco()
 
 
 
-
-
-
-//console.log(`Nome do cliente: ${nome}`)
-//console.log(`Tipo de jogo: ${tipoDeJogo}`)
-//console.log(`Etapa do jogo: ${etapaDoJogo}`)
-//console.log(`Categoria: ${categoria}`)
-//console.log(`Quantidade de Ingressos: ${qtdIngressos}`)
