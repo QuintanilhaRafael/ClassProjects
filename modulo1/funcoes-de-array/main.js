@@ -185,7 +185,7 @@ console.log(novoArrayC)
  const arrayNovoB = produtos.map((item)=>{
      return {
          nome: item.nome,
-         preco: item.preco
+         preço: (item.preco-(item.preco/20)).toFixed(2)
      }   
  })
  console.log(arrayNovoB)
