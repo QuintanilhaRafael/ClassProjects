@@ -86,7 +86,7 @@
       iniciaJogo() 
    }                     
    
-   while (usuario.pontos < 21 && resposta===true) {  //Laço do usuário: Momento que o usuário continua comprando as cartas até que decida parar ou passe de 21 pontos.
+   while (resposta===true) {  //Laço do usuário: Momento que o usuário continua comprando as cartas até que decida parar ou passe de 21 pontos.
       confirmacao()          
       if (resposta===true) {   
          compraUsuario()   
@@ -95,8 +95,6 @@
          alert(`Usuário - cartas: ${usuario.cartas}  - pontuação ${usuario.pontos}
    Computador - cartas: ${computador.cartas}  - pontuação ${computador.pontos}
    Computador Ganhou !`)
-         break;
-      } if (usuario.pontos == 21) {      //impede que o usuário compre mais cartas se já chegou aos 21.
          break;
       }
    }
