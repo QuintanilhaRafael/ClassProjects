@@ -80,17 +80,18 @@ function confirmacao() {                      //função que pergunta se o usuá
    return resposta
 }
 
-iniciaJogo()                             //Teste condicional para ver se um dos jogadores começou com duas cartas Ás.
-if ((usuario.cartas[0].includes('A') == true && usuario.cartas[1].includes('A') == true) || (computador.cartas[0].includes('A') == true && computador.cartas[1].includes('A') == true))
-   iniciaJogo()                      
-else
-   confirmacao()
+//Teste condicional para ver se um dos jogadores começou com duas cartas Ás.
+   iniciaJogo()
+while ((usuario.cartas[0].includes('A') == true && usuario.cartas[1].includes('A') == true) || (computador.cartas[0].includes('A') == true && computador.cartas[1].includes('A') == true)) {
+   iniciaJogo() 
+}                     
 
-while (resposta===true) {           //Laço do usuário: Momento que o usuário continua comprando as cartas até que decida parar ou passe de 21 pontos.
-   if (usuario.pontos < 21) {       
-      compraUsuario()
-      confirmacao()
-   } if (usuario.pontos > 21) {                //testa no laço se o usuário passa dos 21. Se passar = Pc ganha.
+while (usuario.pontos < 21 && resposta===true) {  //Laço do usuário: Momento que o usuário continua comprando as cartas até que decida parar ou passe de 21 pontos.
+   confirmacao()          
+   if (resposta===true) {   
+      compraUsuario()   
+   } 
+   if (usuario.pontos > 21) {                //testa no laço se o usuário passa dos 21. Se passar = Pc ganha.
       alert(`Usuário - cartas: ${usuario.cartas}  - pontuação ${usuario.pontos}
 Computador - cartas: ${computador.cartas}  - pontuação ${computador.pontos}
 Computador Ganhou !`)
@@ -99,6 +100,7 @@ Computador Ganhou !`)
       break;
    }
 }
+
 
 if (usuario.pontos <= 21) {      //Laço do computador: Caso o usuário não tenha passado dos 21 pontos e tenha parado de comprar, computador começa a comprar.
    while (computador.pontos < usuario.pontos) {
