@@ -86,16 +86,16 @@ if ((usuario.cartas[0].includes('A') == true && usuario.cartas[1].includes('A') 
 else
    confirmacao()
 
-while (resposta == true) {           //Laço do usuário: Momento que o usuário continua comprando as cartas até que decida parar ou passe de 21 pontos.
-   if (usuario.pontos > 21) {                //testa no laço se o usuário passa dos 21. Se passar = Pc ganha.
-      alert(`Usuário - cartas: ${usuario.cartas}  - pontuação ${usuario.pontos}`)
-      alert(`Computador - cartas: ${computador.cartas}  - pontuação ${computador.pontos}`)
-      alert(`Computador Ganhou !`)
-      break;
-   } else if (usuario.pontos < 21) {  //impede que o usuário compre mais cartas se já passou dos 21.
+while (resposta===true) {           //Laço do usuário: Momento que o usuário continua comprando as cartas até que decida parar ou passe de 21 pontos.
+   if (usuario.pontos < 21) {       
       compraUsuario()
       confirmacao()
-   } else {  
+   } if (usuario.pontos > 21) {                //testa no laço se o usuário passa dos 21. Se passar = Pc ganha.
+      alert(`Usuário - cartas: ${usuario.cartas}  - pontuação ${usuario.pontos}
+Computador - cartas: ${computador.cartas}  - pontuação ${computador.pontos}
+Computador Ganhou !`)
+      break;
+   } if (usuario.pontos == 21) {      //impede que o usuário compre mais cartas se já passou dos 21.
       break;
    }
 }
@@ -105,21 +105,21 @@ if (usuario.pontos <= 21) {      //Laço do computador: Caso o usuário não ten
       compraComputador()
    }
    if (computador.pontos == usuario.pontos) {                   //Caso pontos iguais = empate.
-      alert(`Usuário - cartas: ${usuario.cartas}  - pontuação ${usuario.pontos}`)
-      alert(`Computador - cartas: ${computador.cartas}  - pontuação ${computador.pontos}`)
-      alert(`Empate !`)
+      alert(`Usuário - cartas: ${usuario.cartas}  - pontuação ${usuario.pontos}
+Computador - cartas: ${computador.cartas}  - pontuação ${computador.pontos}
+Empate !`)
    } else if (computador.pontos > 21) {               //Caso usuário <= 21 e Computador > 21  =  Usuário ganha.
-      alert(`Usuário - cartas: ${usuario.cartas}  - pontuação ${usuario.pontos}`)
-      alert(`Computador - cartas: ${computador.cartas}  - pontuação ${computador.pontos}`)
-      alert(`Usuário Ganhou !`)
+      alert(`Usuário - cartas: ${usuario.cartas}  - pontuação ${usuario.pontos}
+Computador - cartas: ${computador.cartas}  - pontuação ${computador.pontos}
+Usuário Ganhou !`)
    } else if (computador.pontos > usuario.pontos && computador.pontos <= 21) {          //Caso os pontos do computador sejam maiores que do usuário mas ambos abaixo dos 21 = pc ganha.
-      alert(`Usuário - cartas: ${usuario.cartas}  - pontuação ${usuario.pontos}`)
-      alert(`Computador - cartas: ${computador.cartas}  - pontuação ${computador.pontos}`)
-      alert(`Computador Ganhou !`)
+      alert(`Usuário - cartas: ${usuario.cartas}  - pontuação ${usuario.pontos}
+Computador - cartas: ${computador.cartas}  - pontuação ${computador.pontos}
+Computador Ganhou !`)
    } else {                                                                             // else = Usuário ganha.
-      alert(`Usuário - cartas: ${usuario.cartas}  - pontuação ${usuario.pontos}`)
-      alert(`Computador - cartas: ${computador.cartas}  - pontuação ${computador.pontos}`)
-      alert(`Usuário Ganhou !`)
+      alert(`Usuário - cartas: ${usuario.cartas}  - pontuação ${usuario.pontos}
+Computador - cartas: ${computador.cartas}  - pontuação ${computador.pontos}
+Computador Ganhou !`)
    }
 
 }
