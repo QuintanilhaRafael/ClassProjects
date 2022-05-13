@@ -81,7 +81,19 @@ function retornaMaiorNumero(array) {
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
-
+    if (num1 >= num2){
+        return {
+            maiorNumero: num1,
+            maiorDivisivelPorMenor: num1%num2 == 0,
+            diferenca: num1 - num2
+        }
+    } else {
+        return {
+            maiorNumero: num2,
+            maiorDivisivelPorMenor: num2%num1 == 0,
+            diferenca: num2 - num1
+        }
+    }
 }
 
 // EXERCÍCIO 08
@@ -121,7 +133,17 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
+    let divida = 0
+for (let conta of contas){
+    for(i=0;i<conta.compras.length; i++){
+         divida += conta.compras[i]
+    }
+    conta.compras = []
+    conta.saldoTotal -= divida
+    divida = 0
 
+}
+return contas
 }
 
 // EXERCÍCIO 15A
@@ -131,5 +153,31 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
-   
+        const newConsultas = consultas.map((item)=>{
+            return item.dataDaConsulta
+        }).sort(function (a, b) {
+            a = a.split('/');
+            b = b.split('/');
+            return a[2] - b[2] || a[1] - b[1] || a[0] - b[0];                                                                           
+        });
+        var novaOrdem = []
+        for(i=0;i<consultas.length;i++){
+            for(j=0;j<consultas.length;j++){
+            if (newConsultas[i]===consultas[j].dataDaConsulta){
+                novaOrdem.push(consultas[j])
+            }
+        }
+    }
+    return novaOrdem
+    
 }
+
+
+
+
+
+/*.sort(function(a, b){
+            var aa = a.split('/').reverse().join(),
+                bb = b.split('/').reverse().join();
+            return aa < bb ? -1 : (aa > bb ? 1 : 0);
+        })*/
