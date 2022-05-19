@@ -1,0 +1,4 @@
+//Resumão dos 7: 
+Primeiramente você deve analisar bem a questão em si, prestando atenção no enunciado e notando as informações relevantes para a solução. Assim, você consegue ter uma idéia melhor das possíveis entradas e saídas de dados necessárias, tal como as variáveis e possíveis funções para modularizar o código e resolver o problema.
+A próxima etapa e criar o código e testar quantas vezes for necessário para que, através dos erros, consiga realizar as alterações necessárias para um código pronto e elegante.
+
