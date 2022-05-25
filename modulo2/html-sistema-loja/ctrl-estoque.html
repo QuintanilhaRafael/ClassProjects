@@ -5,67 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TTC - Controle de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <p>Nome da lojinha</p>
+        <h1 id="title">Ta Tudo Caro</h1>
     </header>
     
-    <nav>
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
+    <nav class="class1">
+        <a href="index.html" ><button class="button-85" role="button">Página Inicial</button></a>
+        <a href="ctrl-estoque.html"><button class="button-85" role="button">Controle de Estoque</button></a>
+        <a href="add-produto.html"><button class="button-85" role="button">Adicionar Produtos</button></a>
+        <a href="funcionarios.html"><button class="button-85" role="button">Funcionários</button></a>
     </nav>
 
-    <h2>Controle de Estoque</h2>
+    <main style="color:whitesmoke;">
+<div class="grid-container">
 
-    <table>
-        <tr>
-            <th>Foto</th>
-            <th>Descrição</th>
-            <th>Preço (R$)</th>
-            <th>Quantidade disponível</th>
-        </tr>
-
-        <tr>
-            <td><img width="100" src="./img/tv.jpg" alt="Tv 55 polegadas Full HD"/></td>
-            <td> Tv Full HD 55" </td>
-            <td> 3.000,00 </td>
-            <td> 10 </td>
-        </tr>
-
-        <tr>
-            <td><img width="100" src="./img/ps5.jpg" alt="Playstation 5"/></td>
-            <td> Playstation 5 </td>
-            <td> 4.999,00 </td>
-            <td> 30 </td>
-        </tr>
-
-        <tr>
-            <td><img width="100" src="./img/iphone 13.jpg" alt="Iphone 13 Azul Baby"/></td>
-            <td> Iphone 13 </td>
-            <td> 5.400,00 </td>
-            <td> 15 </td>
-        </tr>
-
-        <tr>
-            <td><img width="100" src="./img/xbox.jpg" alt="Xbox series x preto"/></td>
-            <td> Xbox series x </td>
-            <td> 5.199,00 </td>
-            <td> 6 </td>
-        </tr>
-
-        <tr>
-            <td><img width="100" src="./img/caneca-back-end-rules.jpg" alt="Caneca muito braba"/></td>
-            <td> Caneca (back-end rules/front-end sucks) </td>
-            <td> 15,00 </td>
-            <td> 1 </td>
-        </tr>
-        
         
 
-    </table>
+<div class="card">
+  <img src="./img/ps5.jpg" alt="Playstation 5" style="width:100%">
+  <h1>Playstation 5</h1>
+  <p class="price">R$5250.99</p>
+  <p>Playstation 5 que você nunca vai ter !</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+
+<div class="card">
+  <img src="./img/tv.jpg" alt="TV" style="width:100%">
+  <h1>Tv HD 55"</h1>
+  <p class="price">R$1230.99</p>
+  <p>TV HD que você vai se matar pra ter !</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+<div class="card">
+    <img src="./img/caneca-back-end-rules.jpg" alt="caneca-back-end-rules" style="width:100%">
+    <h1>Caneca Back-End Rules"</h1>
+    <p class="price">R$12.99</p>
+    <p>Back-end rules, Front-end sucks !</p>
+    <p><button>Add to Cart</button></p>
+  </div>
+
+  <div class="card">
+    <img src="./img/xbox.jpg" alt="xbox" style="width:100%">
+    <h1>Xbox S Series"</h1>
+    <p class="price">R$6980.99</p>
+    <p>Pior que o ps5...</p>
+    <p><button>Add to Cart</button></p>
+  </div>
+</div>
+    </main>
+
+    <footer class="class1">
+        <p>Siga-nos nas redes sociais!</p>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://pt-br.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://br.linkedin.com/" class="fa fa-linkedin"></a>
+    </footer>
 
 </body>
 </html>
