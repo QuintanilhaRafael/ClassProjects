@@ -1,3 +1,10 @@
+li.lifunc:hover{
+  background-color: #111;
+  color:#ff0000;
+  display: inline;
+}
+
+
 body{
     background-color: black;
 }
@@ -110,6 +117,10 @@ footer {
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+.button-85:hover{
+  opacity: 0.7;
 }
 
 /*remove underline*/
@@ -245,11 +256,15 @@ a {
 
   .card {
     box-shadow: 0 4px 8px 0 rgb(83, 82, 82);
-    max-width: 300px;
+    max-width: 250px;
     margin:auto;
     text-align:center;
     color: whitesmoke;
     font-family: arial;
+  }
+
+  .card:hover{
+    box-shadow: 0 4px 15px 0 rgb(218, 214, 214);
   }
   
   .price {
@@ -273,8 +288,16 @@ a {
     opacity: 0.7;
   }
 
-  .grid-container {
+  .box {
+    display: flex;
+    align-items: flex-start;
+    height: 200px;
+    margin: 70px;
+  }
+
+  /*.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-}
+    
+}*/
