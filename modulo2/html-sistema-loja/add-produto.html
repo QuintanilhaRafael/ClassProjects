@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TTC - Adicionar Produto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Ta Tudo Caro</h1>
+    </header>
+    
+    <nav class="class1">
+        <a href="index.html" ><button class="button-85" role="button">Página Inicial</button></a>
+        <a href="ctrl-estoque.html"><button class="button-85" role="button">Controle de Estoque</button></a>
+        <a href="add-produto.html"><button class="button-85" role="button">Adicionar Produtos</button></a>
+        <a href="funcionarios.html"><button class="button-85" role="button">Funcionários</button></a>
+    </nav>
+
+    
+    <h2 class="class1" style="color:white ; font-family: 'Times New Roman', Times, serif;">Adicionar Produto</h2>
+    <form action="#" class="class1" style="color:white ; font-family: 'Times New Roman', Times, serif;">
+            <label for="link-foto">Link para foto: </label>
+            <input type="url" id="link-foto" name="link-foto">
+            <br>
+     
+            <label for="descricao">Descrição do produto: </label>
+            <!-- Adicione o id apropriado para o input abaixo -->
+            <input type="text" id="descricao" name="descrição">
+            <br>
+            <label for="preco">Preço (em R$): </label>
+            <!-- Adicione o id apropriado e o type para receber números abaixo -->
+            <input type="number" id="preco" name="preço">
+            <br>
+
+            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
+            <label for="qtdDisponivel">Quantidade disponível: </label>
+            <input type="number" id="qtdDisponivel" name="quantidade-disponível">
+
+            <br>
+            <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
+            <button type="submit">Adicionar</button>
+
+    </form>
+
+    <footer class="class1">
+        <p>Siga-nos nas redes sociais!</p>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://pt-br.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://br.linkedin.com/" class="fa fa-linkedin"></a>
+    </footer>
+
+</body>
+</html>
