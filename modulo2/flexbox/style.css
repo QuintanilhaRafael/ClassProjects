@@ -41,11 +41,11 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 300px;
     background-color: #f2d0e0;
     height: 90vh;
     text-transform: uppercase;
     font-weight: bolder;
+    width: 300px;
 }
 
 nav img, p {
@@ -60,7 +60,35 @@ nav div {
     display: flex;
     margin: 10px;
     align-items:center; 
+    width: 300px;
 }
+
+div a {
+margin-left: auto;
+margin-right: 5px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(83, 82, 82);
+    margin: 15px;
+}
+
+.card img {
+    width: 300px;
+}
+
 
 
 
