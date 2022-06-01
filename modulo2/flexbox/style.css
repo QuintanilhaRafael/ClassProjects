@@ -74,6 +74,11 @@ main {
     align-items:flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+main div p {
+    max-width: 200px;
 }
 
 .card {
@@ -82,7 +87,7 @@ main {
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgb(83, 82, 82);
-    margin: 15px;
+    margin: 10px;
 }
 
 .card img {
