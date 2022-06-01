@@ -83,7 +83,6 @@ main div p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     box-shadow: 0 4px 8px 0 rgb(83, 82, 82);
     margin: 10px;
 }
