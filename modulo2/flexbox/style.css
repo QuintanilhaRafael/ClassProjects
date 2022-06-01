@@ -19,10 +19,6 @@ header button {
     font-size: 14px;
 }
 
-button:hover {
-    opacity: 0.7;
-}
-
 header img, h1 {
     margin: 15px;
 }
@@ -33,6 +29,10 @@ header img {
 
 header img {
     width: 30px;
+}
+
+header button:hover {
+    opacity: 0.7;
 }
 
 
@@ -67,7 +67,13 @@ nav div {
     width: 300px;
 }
 
-a:hover {
+div a {
+margin-left: auto;
+margin-right: 5px;
+transition: transform 0.4s;
+}
+
+div a:hover {
     transform: rotate(90deg);
     transition: transform 0.4s;
 }
