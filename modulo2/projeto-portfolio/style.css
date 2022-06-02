@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #23232e;
+  background-size: cover;
+  height: 8vh;
+  text-align: center;
+}
+
+.class1 {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 0.2s;
+
+}
+
+.class1:hover {
+  opacity: 0.7;
+  font-size: 30px;
+  color: #6a6aff;
+}
+
+.logo {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #23232e;
+  height: 8vh;
+}
+
+main {
+  background: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-blue-violet-line-banner-background-image_271519.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  letter-spacing: 4px;
+  margin-left: 32px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 10px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.div1 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  color: #ffffffe8;
+  font-size: 25px;
+  display:block;
+  justify-content: center;
+  border: 5px dotted rgb(144, 25, 168);
+  padding: 15px;
+}
+
+.div1 h1 {
+  margin: auto;
+  color:rgb(231, 25, 25);
+  border: 5px dotted rgb(144, 25, 168);
+  padding: 15px;
+}
+
+.div1.index {
+  top: 50%;
+}
+
+.div2 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+  padding: 50px;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.div2 li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: #cbeff1;
+
+}
+
+.div2 li:hover {
+  opacity: 0.5;
+}
+
+.div2 ul {
+  margin: 90px;
+  border: 5px dotted rgb(144, 25, 168);
+  padding: 75px;
+}
+
+.div2 h2 {
+  text-align: center;
+  color: #14031b;
+}
+
+.div2 h1 {
+  border-bottom: 5px dotted rgb(144, 25, 168);
+  padding: 5px;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  max-width: 250px;
+  margin:auto;
+  text-align:center;
+  color: #cbeff1;
+  font-family: arial;
+  background: #23232e;
+}
+
+.card p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 21px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(172, 21, 218);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.box {
+  display: flex;
+  align-items: flex-start;
+  height: 200px;
+  height: 100%;
+}
+
+.imgsize {
+  max-width: 800px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4d4d4d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ff00ff;
+}
+
+.div3 {
+  border-radius: 5px;
+  background-color: #363785;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.box2 {
+display: flex;
+text-align: center;
+align-items:center;
+flex-direction: column;
+justify-content: center;
+}
+
+.box2 h1 {
+  color: #cbeff1;
+  padding: 10px;
+  margin: 10px;
+}
+
