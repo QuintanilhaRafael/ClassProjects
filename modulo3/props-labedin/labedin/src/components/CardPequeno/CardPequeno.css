@@ -1,0 +1,16 @@
+.smallcard-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px 10px;
+    margin-bottom: 10px;  
+}
+
+.smallcard-container > img {
+    width: 30px;
+    
+}
+
+.smallcard-item {
+    margin: 0px 3px;
+}
