@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './style.css'
+import { DropDownItem, DropDownStyle, IconContainerNew, IconImage, CommentContainer, InputComentario } from './../../style';
 
 
 
@@ -17,13 +17,13 @@ export function DropDown(props) {
 
     
 
-    return <div className='IconContainerNew'>
-        < img className='IconImage' alt={'Icone'} src={props.icone} onClick={onClickDropDown} />
-        {open && <div className='DropDown'>
-            <div className='DropDownItem' >
+    return <IconContainerNew>
+        < IconImage alt={'Icone'} src={props.icone} onClick={onClickDropDown} />
+        {open && <DropDownStyle>
+            <DropDownItem>
                 <i className="fa fa-facebook-square"></i>
-                <div className='CommentContainer'>
-			<input className='InputComentario'
+                <CommentContainer>
+			<InputComentario
 				placeholder={'Comentário'}
 				value={inputName}
 				onChange={(event) => {
@@ -35,12 +35,12 @@ export function DropDown(props) {
                 setOpen(!open)
                 setInputName("")
             }}>Enviar</button>
-		</div>
-            </div>
-            <div className='DropDownItem' >
+		</CommentContainer>
+            </DropDownItem>
+            <DropDownItem>
                 <i className="fa fa-instagram"></i>
-                <div className='CommentContainer'>
-			<input className='InputComentario'
+                <CommentContainer>
+			<InputComentario
 				placeholder={'Comentário'}
 				value={inputName2}
 				onChange={(event) => {
@@ -52,12 +52,12 @@ export function DropDown(props) {
                 setOpen(!open)
                 setInputName2("")
             }}>Enviar</button>
-		</div>
-            </div>
-            <div className='DropDownItem' >
+		</CommentContainer>
+            </DropDownItem>
+            <DropDownItem>
                 <i className="fa fa-twitter-square"></i>
-                <div className='CommentContainer'>
-			<input className='InputComentario'
+                <CommentContainer>
+			<InputComentario
 				placeholder={'Comentário'}
 				value={inputName3}
 				onChange={(event) => {
@@ -69,9 +69,9 @@ export function DropDown(props) {
                 setOpen(!open)
                 setInputName3("")
             }}>Enviar</button>
-		</div>
-            </div>
-        </div>
+		</CommentContainer>
+            </DropDownItem>
+        </DropDownStyle>
         }
-    </div>
+    </IconContainerNew>
 }

@@ -36,6 +36,8 @@ let arrayDeCards=arrayDePosts.map((elemento,index)=>{
     )
 })
 
+console.log({arrayDeCards})
+
 
 return(
   <MainContainer>
