@@ -27,6 +27,10 @@ function App() {
 
   const upNewPost = (e) => {
     e.preventDefault();
+
+    if (nomeUsuario === "" || fotoUsuario === "" || fotoPost === "") {
+      console.log('Missing input')
+    } else {
     const newPost = { nomeUsuario: nomeUsuario, fotoUsuario: fotoUsuario, fotoPost: fotoPost };
     const newArrayOfPosts = [...arrayDePosts, newPost];
     setArrayDePosts(newArrayOfPosts);
@@ -35,6 +39,7 @@ function App() {
     setFotoPost('')
 
   }
+}
 
 
 
