@@ -44,7 +44,7 @@ display: flex;
 align-items: flex-end;
 justify-content: center;
 width: 40%;
-min-width: 400px;
+min-width: 360px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.70), 0 4px 8px 0 rgba(0, 0, 0, 0.70);
 background-image: url(https://i.pinimg.com/564x/98/da/8f/98da8f9306de27424460d16e53938b72.jpg);
 border-radius: 5px;
@@ -112,14 +112,14 @@ button:hover {
 export const InputMsg = styled.input`
 width: 60%;
 height: 35px;
-min-width: 250px;
+min-width: 200px;
 
 `
 
 export const InputSender = styled.input`
 width: 20%;
 height: 35px;
-min-width: 80px;
+min-width: 60px;
 
 `
 
