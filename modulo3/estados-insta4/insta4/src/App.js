@@ -64,9 +64,6 @@ function App() {
     )
   })
 
-
-
-
   return (
     <MainContainer>
       <GlobalStyle />
