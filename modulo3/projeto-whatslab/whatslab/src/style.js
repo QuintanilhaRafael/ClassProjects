@@ -138,6 +138,7 @@ padding: 15px;
 margin: 15px 30px;
 box-shadow: 0 4px 8px 0 rgb(83, 82, 82);
 background: ${(props)=>props.cor};
+min-width: 120px;
  ${(props)=> {
   if (props.lado === 'direito') {
     return 'align-self: flex-end;'
@@ -145,8 +146,9 @@ background: ${(props)=>props.cor};
  }}
 
 p {
-  font-weight: 700;
+  font-weight: 650;
   margin-bottom: 5px;
+  font-style: italic;
 }
 `
 
