@@ -139,6 +139,13 @@ margin: 15px 30px;
 box-shadow: 0 4px 8px 0 rgb(83, 82, 82);
 background: ${(props)=>props.cor};
 min-width: 120px;
+max-width: 75%;
+-ms-hyphens: auto;
+-moz-hyphens: auto;
+-webkit-hyphens: auto;
+hyphens: auto;
+overflow-wrap: break-word;
+word-wrap: break-word;
  ${(props)=> {
   if (props.lado === 'direito') {
     return 'align-self: flex-end;'
@@ -149,6 +156,10 @@ p {
   font-weight: 650;
   margin-bottom: 5px;
   font-style: italic;
+}
+
+span {
+  max-width: 95%;
 }
 `
 
