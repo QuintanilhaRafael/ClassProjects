@@ -31,7 +31,7 @@ function InputArea() {
 			newArray.splice(deleteMsg, 1)
 			setArrayMsg(newArray)
 		}
-		if (e.name === 'eu' || e.name === 'Eu' || e.name === 'EU' || e.name === 'eU') {
+		if (e.name.toLowerCase() === 'eu') {
 			return (
 				<MsgBox onDoubleClick={deletarPessoa} lado={'direito'} cor={'#dcf8c6'} key={i}>
 					<span>{e.msg}</span>
