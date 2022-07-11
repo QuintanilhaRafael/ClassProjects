@@ -28,6 +28,8 @@ export const CommentContainer = styled.div`
     display: flex;
     justify-content: center;
     padding: 5px;
+    align-items: center;
+    
   
 
 `
@@ -48,6 +50,7 @@ export const PostContainer = styled.div`
     border: 1px solid gray;
     width: 300px;
     margin-bottom: 10px;
+    
 `
 
 export const PostHeader = styled.div`
@@ -55,6 +58,20 @@ export const PostHeader = styled.div`
     display: flex;
     align-items: center;
     padding-left: 10px;
+   
+
+    button {
+        margin-left: auto;
+        margin-right: 10px;
+        padding: 0 2px;
+        background: transparent;
+        border: none !important;
+
+        i:hover {
+            opacity: 0.6;
+        }
+        
+    }
 `
 
 export const PostFooter = styled.div`
@@ -73,7 +90,8 @@ export const UserPhoto = styled.img`
 `
 
 export const PostPhoto = styled.img`
-    width: 100%;
+    width: 300px;
+    height: 180px;
 `
 
 
@@ -96,7 +114,8 @@ export const DropDownStyle = styled.div`
     padding: 10px;
     position: absolute;
     margin-top: 24px;
-    transform: translateX(-5%);
+    transform: translateX(10%);
+    
 `
 
 export const DropDownItem = styled.div`
@@ -112,6 +131,62 @@ export const DropDownItem = styled.div`
             margin-right: 10px;
         }
 `
+
+export const InputMakeUp = styled.div`
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        label {
+            font-weight: 700;
+            margin: 5px 0;
+        }
+
+        button {
+            width: 80px;
+            margin-top: 10px;
+            align-self:center;
+            
+            
+
+        }
+`
+
+export const CommentListContainer = styled.div`
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 5px;
+        background-color: #C1C1C1;
+        padding: 5px;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        border-radius: 5px;
+    
+
+        span {
+            max-width: 90%;
+        }
+
+        button {
+            background: transparent;
+            border: none !important;
+            margin-left: 5px;
+
+            i:hover {
+                opacity: 0.6;
+            }
+        }
+
+
+`
+
 
 
 

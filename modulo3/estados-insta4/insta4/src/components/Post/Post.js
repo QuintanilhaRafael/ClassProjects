@@ -9,7 +9,7 @@ import iconeComentario from '../../img/comment_icon.svg'
 import { SecaoComentario } from '../SecaoComentario/SecaoComentario'
 import { IconeSemContador } from './../IconeSemContador/IconeSemContador';
 import { DropDown } from '../DropDown/DropDown'
-import { PostContainer, PostHeader, PostFooter, UserPhoto, PostPhoto } from '../../style'
+import { PostContainer, PostHeader, PostFooter, UserPhoto, PostPhoto, CommentListContainer } from '../../style'
 
 
 
@@ -21,13 +21,46 @@ function Post(props) {
   const [curtido, setCurtido] = useState(false)
   const [comentando, setComentando] = useState(false)
   const [numeroComentarios, setNumeroComentarios] = useState(0)
-  const [inputName, setInputName] = useState("")
+  const [inputMsg, setInputMsg] = useState("")
+  const [commentList, setCommentList] = useState([])
+
+
+  const addComment = (e) => {
+    e.preventDefault();
+
+   const newComment = {msg:inputMsg}
+
+   const newCommentList = [ ...commentList, newComment ]
+
+   setCommentList(newCommentList);
+
+   setComentando(false);
+
+  setNumeroComentarios(numeroComentarios + 1);
+
+  setInputMsg('')
+  
+}
 
   
 
-  const handleInputName = (event) => {
-    setInputName(event.target.value);
-  }
+  const newCommentList = commentList.map ((e,i)=> {
+    const deleteComment = () => {
+      const newCommentList = [...commentList]
+      const deletar = newCommentList.findIndex((element)=>{
+          return element === e
+      })
+      newCommentList.splice(deletar, 1)
+      setCommentList(newCommentList)
+      setNumeroComentarios(numeroComentarios - 1);
+    }
+    return (
+      <CommentListContainer key={i}>
+       <span>{e.msg}</span>
+       <button onClick={deleteComment}><i class="fa fa-close"></i></button>
+      </CommentListContainer>
+    )
+  })
 
   const onClickCurtida = () => {
     setCurtido(!curtido)
@@ -54,11 +87,7 @@ function Post(props) {
     setComentando(!comentando)
   }
 
-  const aoEnviarComentario = () => {
-    setComentando(false)
-    setNumeroComentarios(numeroComentarios + 1)
-    console.log(inputName)
-  }
+  
 
   let iconeCurtida
 
@@ -79,7 +108,9 @@ function Post(props) {
   let componenteComentario
 
   if (comentando) {
-    componenteComentario = <SecaoComentario onChangeComentario={handleInputName} name={inputName} aoEnviar={aoEnviarComentario} />
+    componenteComentario = <SecaoComentario onChangeComentario={(e) => {
+      setInputMsg(e.target.value);
+    }} msg={inputMsg} aoEnviar={addComment} />
   }
 
   return (
@@ -87,6 +118,7 @@ function Post(props) {
       <PostHeader>
         <UserPhoto src={props.fotoUsuario} alt={'Imagem do usuario'} />
         <p>{props.nomeUsuario}</p>
+        <button onClick={props.deletePost}><i class="fa fa-close"></i></button>
       </PostHeader>
 
       <PostPhoto src={props.fotoPost} alt={'Imagem do post'} />
@@ -113,6 +145,7 @@ function Post(props) {
           icone={iconeShare}
         />
       </PostFooter>
+      {newCommentList}
       {componenteComentario}
     </PostContainer>
   )
