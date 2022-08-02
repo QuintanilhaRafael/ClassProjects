@@ -155,7 +155,7 @@ function App() {
             <p>Email: {item.email}</p>
           </ListContainer>
         </User>
-        <button onClick={() => { deleteUser(item.id); setOpen2(false) }}>Delete</button>
+        <button onClick={() => { deleteUser(item.id, item.name); setOpen2(false) }}>Delete</button>
       </>
     )
   })
