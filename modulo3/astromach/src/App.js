@@ -27,14 +27,13 @@ function App() {
   )
 
   // axios
+  
 
   const getNewPerson = () => {
     axios.get('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/rafael-quintanilha-lamarr/person').then((response) => {
-      if (response.data.profile === null) {
-        setPerson([])
-      } else {
-        setPerson([response.data.profile])
-      }
+
+      setPerson([response.data.profile])
+
     }).catch((error) => {
       alert('nope')
     })
@@ -62,16 +61,16 @@ function App() {
   }
 
   const clearMatches = () => {
-    axios.put('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/rafael-quintanilha-lamarr/clear').then(()=> {
+    axios.put('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/rafael-quintanilha-lamarr/clear').then(() => {
       alert('Cleared!')
       getNewPerson()
-    }).catch((error)=> {
+    }).catch((error) => {
       alert('nope!')
     })
   }
 
 
-
+  // execução da escolha de pages e botôes
 
   return (
     <Container>

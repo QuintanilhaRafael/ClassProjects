@@ -1,12 +1,13 @@
 import React from 'react'
 import { ListContainer, ListItem } from './Style'
 
-export const MatchesPage = ({matches}) => {
-    
+export const MatchesPage = ({ matches }) => {
 
-    const mapedList = matches && matches.map((e) => {
+    // mapeamento da lista de matches do app
+
+    const mapedList = matches && matches.map((e, i) => {
         return (
-            <ListContainer>
+            <ListContainer key={i}>
                 <ListItem>
                     <img src={e.photo} alt='photo'></img>
                     <p>{e.name}</p>
@@ -15,9 +16,11 @@ export const MatchesPage = ({matches}) => {
         )
     })
 
-  return (
-    <>
-{mapedList}
-    </>
-  )
+    // página da lista de matches já mapeada.
+
+    return (
+        <>
+            {mapedList}
+        </>
+    )
 }
