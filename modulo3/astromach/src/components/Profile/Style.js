@@ -56,6 +56,7 @@ export const ProfileContainer = styled.div`
     .inline {
         @import url('https://fonts.googleapis.com/css?family=Special+Elite');
         display: flex;
+        flex-direction: row;
         font-family: 'Special Elite', cursive;
         align-items: center;
         justify-content: center;
@@ -110,7 +111,7 @@ p {
     justify-content: center;
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
         .inline {
             flex-direction: column;
         }
