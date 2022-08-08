@@ -24,7 +24,7 @@ export const Card = ({ person, clearMatches }) => {
         }
     })
 
-     //Cartão ou botão clear já mapeados.
+    //Cartão ou botão clear já mapeados.
 
     return (
         <>

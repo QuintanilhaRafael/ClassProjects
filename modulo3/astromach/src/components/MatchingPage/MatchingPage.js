@@ -4,7 +4,7 @@ import { MatchingContainer } from './Style';
 
 export const MatchingPage = ({ person, matchingFunction, clearMatches }) => {
 
-  // página principal do app
+  // render página escolha de matchings do app
 
   return (
     <MatchingContainer>
