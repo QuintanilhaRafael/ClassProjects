@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ProfileContainer = styled.div`
+    @import url('https://fonts.googleapis.com/css?family=Special+Elite');
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,11 +50,10 @@ export const ProfileContainer = styled.div`
 
     
     span {
-        @import url('https://fonts.googleapis.com/css?family=Special+Elite');
         font-family: 'Special Elite', cursive;
         font-weight: 100;
         font-size: 2rem;
-        max-width: 500px;
+        max-width: 600px;
         line-height: 1.0;
         position: relative;
         margin-bottom: 35px;
@@ -85,6 +85,7 @@ span:after {
 }
 
 p {
+    font-family: 'Special Elite', cursive;
     font-size: 35px;
 	line-height: 3;
 	text-align: left;
