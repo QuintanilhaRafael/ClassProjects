@@ -10,6 +10,7 @@ export const ProfileContainer = styled.div`
     background: #E5E5E5;
     width: 50%;
     max-width: 1000px;
+    min-width: 370px;
     flex-wrap: wrap;
 
     button {
@@ -43,7 +44,6 @@ export const ProfileContainer = styled.div`
         object-fit: cover;
         width: 280px;
         height: 370px;
-        margin-right: auto;
         border-radius: 5px;
     }
 
@@ -56,7 +56,7 @@ export const ProfileContainer = styled.div`
     .inline {
         @import url('https://fonts.googleapis.com/css?family=Special+Elite');
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         font-family: 'Special Elite', cursive;
         align-items: center;
         justify-content: center;
@@ -110,13 +110,4 @@ p {
     align-items: center;
     justify-content: center;
 }
-
-@media screen and (max-width: 1400px) {
-        .inline {
-            flex-direction: column;
-        }
-        img {
-            margin: 0;
-        }
-    }
 `
