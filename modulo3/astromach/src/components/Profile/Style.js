@@ -47,24 +47,10 @@ export const ProfileContainer = styled.div`
         border-radius: 5px;
     }
 
-    h1 {
-        align-self: flex-start;
-        margin-right: 25%;
-        margin-bottom: auto;
-    }
-
-    .inline {
-        @import url('https://fonts.googleapis.com/css?family=Special+Elite');
-        display: flex;
-        flex-direction: column;
-        font-family: 'Special Elite', cursive;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-
-    }
-
+    
     span {
+        @import url('https://fonts.googleapis.com/css?family=Special+Elite');
+        font-family: 'Special Elite', cursive;
         font-weight: 100;
         font-size: 2rem;
         max-width: 500px;

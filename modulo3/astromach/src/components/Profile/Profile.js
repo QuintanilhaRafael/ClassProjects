@@ -10,13 +10,13 @@ export const Profile = ({ selected, changeGateProfile }) => {
         return (
             <ProfileContainer>
                 <button onClick={changeGateProfile}><i class="fa fa-hand-o-left"></i> <p>BACK TO LIST</p></button>
-                <div className='inline'>
+                
                     <img src={e.photo} alt='profile'></img>
                     <div className='block'>
                         <p>{e.name}, {e.age}</p>
                         <span>{e.bio}</span>
                     </div>
-                </div>
+                
             </ProfileContainer>
         )
     })
