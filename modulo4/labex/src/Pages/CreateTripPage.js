@@ -1,11 +1,17 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import * as myRoute from '../Coordinates'
+import { GenericContainer, GenericDiv } from './../Style';
+
 
 export default function CreateTripPage() {
     const navigate = useNavigate()
   return (
-    <div>
-      <h1>Admin Create Trip !</h1>
-    </div>
+    <GenericContainer>
+      <h1>CreateTripPage</h1>
+      <GenericDiv>
+      <button onClick={()=> {myRoute.goBack(navigate)}}>Back</button>
+      </GenericDiv>
+    </GenericContainer>
   )
 }

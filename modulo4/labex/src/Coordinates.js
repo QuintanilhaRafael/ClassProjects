@@ -1,27 +1,31 @@
-const goToListPage = (navigate) => {
+export const goToListPage = (navigate) => {
     navigate('/trips/list')
 }
 
-const goToLoginPage = (navigate) => {
+export const goToLoginPage = (navigate) => {
     navigate('/login')
 }
 
-const goToApkFormPage = (navigate) => {
+export const goToApkFormPage = (navigate) => {
     navigate('/trips/application')
 }
 
-const goToAdminPage = (navigate) => {
+export const goToAdminPage = (navigate) => {
     navigate('/admin/trips/list')
 }
 
-const goToCreateTripPage = (navigate) => {
+export const goToCreateTripPage = (navigate) => {
     navigate('/admin/trips/create')
 }
 
-const goToTripDetailsPage = (navigate, id) => {
+export const goToTripDetailsPage = (navigate, id) => {
     navigate(`/admin/trips/${id}`)
 }
 
-const goBack = (navigate) => {
+export const goBack = (navigate) => {
     navigate(-1)
+}
+
+export const goToHomePage = (navigate) => {
+    navigate('/')
 }

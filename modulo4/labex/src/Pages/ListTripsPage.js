@@ -1,11 +1,18 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import * as myRoute from '../Coordinates'
+import { GenericContainer, GenericDiv } from './../Style';
+
 
 export default function ListTripsPage() {
     const navigate = useNavigate()
   return (
-    <div>
-      <h1>Trip List !</h1>
-    </div>
+    <GenericContainer>
+      <h1>ListTripsPage</h1>
+      <GenericDiv>
+      <button onClick={()=> {myRoute.goBack(navigate)}}>Back</button>
+      <button onClick={()=> {myRoute.goToApkFormPage(navigate)}}>Application</button>
+      </GenericDiv>
+    </GenericContainer>
   )
 }
