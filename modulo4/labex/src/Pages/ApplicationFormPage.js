@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import * as myRoute from '../Coordinates'
+import * as myRoute from '../Components/Coordinates'
 import { GenericContainer, GenericDiv } from './../Style';
 
 
