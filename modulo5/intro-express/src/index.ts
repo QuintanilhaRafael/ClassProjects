@@ -28,9 +28,10 @@ app.get('/posts', (req:Request, res:Response) => {
     res.send(allPosts)
 })
 
-app.get('/posts/:id', (req:Request, res:Response) => {    
-    const id = req.params.userid
+app.get('/posts/:userid', (req:Request, res:Response) => {    
+    const id = Number(req.params.userid)
     const filteredPosts = posts.filter((post) => {
+        return post.id === id
     })
     res.send(filteredPosts)
 })
