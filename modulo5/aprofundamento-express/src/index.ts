@@ -1,5 +1,3 @@
-//link postman : https://documenter.getpostman.com/view/22347490/2s8YYJr37x
-
 import express, { Request, Response } from "express"
 
 import { toDoList } from "./data"
